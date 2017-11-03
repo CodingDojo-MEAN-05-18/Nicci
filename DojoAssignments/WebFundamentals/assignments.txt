@@ -1,0 +1,52 @@
+Niccis-MacBook-Pro:DojoAssignments niccithenomad$ ls -R
+CodingFiles	MEAN		Ruby		iOS
+HTML-Files-CD	Python		WebFundamentals	netCore
+
+./CodingFiles:
+HTML
+
+./CodingFiles/HTML:
+IndentationPractice.html	helloworld
+IndentationPractice2.html	test.html
+RegForm-b.html
+
+./HTML-Files-CD:
+CodingFiles
+
+./HTML-Files-CD/CodingFiles:
+HTML
+
+./HTML-Files-CD/CodingFiles/HTML:
+Indentation3.html		RegForm.html
+IndentationPractice.html	helloworld
+IndentationPractice2.html	test.html
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt		indentation.html
+
+./WebFundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
