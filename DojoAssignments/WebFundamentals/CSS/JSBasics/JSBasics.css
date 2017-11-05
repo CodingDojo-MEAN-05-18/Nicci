@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
 }
 
 h1{
@@ -35,7 +35,7 @@ li{
 #container{
     height: 700px;
     width: 900px;
-    background-color: black blue;
+    background-color: blue;
 }
 
 #header{
