@@ -8,6 +8,10 @@ h3, h4{
     display: block;
 
 }
+.label{
+    width: 15px;
+    height: 15px;
+}
 
 #container{
     height: 700px;
@@ -29,7 +33,7 @@ h3, h4{
 
 #photo{
     width: 300px;
-    height: 80px;
+    height: 200px;
     border: 4px solid darkgrey;
     display: inline-block; 
     vertical-align: top;
@@ -37,7 +41,7 @@ h3, h4{
 
 #about{
     width: 300px;
-    height: 80px;
+    height: 200px;
     background-color: lightcyan;  
     display: inline-block;  
     vertical-align: top;
