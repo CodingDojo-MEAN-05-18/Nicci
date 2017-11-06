@@ -13,15 +13,22 @@ h3, h4{
     height: 15px;
 }
 .headertext{
-
-
+    color: black;
+    /* float: right; */
+    display: inline;
+    position: absolute;
+    top: 25px;
+    right:10px;
 }
 .name{
     font-family: cursive;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
-    text-align: left;
-    display: inline-block;
+    /* float: left; */
+    display: inline;
+    position: absolute;
+    top: 0px;
+    right: 550px;
 }
 
 #container{
@@ -40,6 +47,8 @@ h3, h4{
     width:660px;
     margin: 5px;
     padding: 5px;
+    display: inline-block;
+    position: absolute;
 }
 
 #photo{
