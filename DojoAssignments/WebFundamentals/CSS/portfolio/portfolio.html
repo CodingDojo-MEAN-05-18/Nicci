@@ -10,73 +10,76 @@
 <body>
     <div id="container">
         <div id="header">
-            <div>
-                <p class="name">Jayne Doe </p>
-                <p class="headertext">Master of Shawdows of the Internet!</p>
+            <h1 class="name">Jayne Doe</h1>
+            <p class="headertext">Master of Shawdows of the Internet!</p>
+        </div>
+        <div id="main">
+            <div id="about">
+                <img src="photo_of_me.jpg" alt="my photo" width=100%>
+                <div id="about-content">
+                <h3>About...</h3>
+                    <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi. Nisi minima eveniet temporibus repellendus voluptatum beatae, voluptates officiis!</p>
+                    <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibusfficiis!</p>
+                    <a href="www.google.com">Continue reading...</a>
+                </div>
             </div>
-        </div>
-
-        <div id="photo">
-            <img src="photo_of_me.jpg" alt="my photo" width=100%>
-        </div>
-        <div id="about">
-            <h3>About...</h3>
-            <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi. Nisi minima eveniet temporibus repellendus voluptatum beatae, voluptates officiis!</p>
-            <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibusfficiis!</p>
-            <a href="www.google.com">Continue reading...</a>
-        </div>
-        
-        <div id="lamode" class="title">
-            <h3>La Mode</h3>
-            <img src="lamode.png" alt="lamode" width="100%">
-            <p>ipsum Loremq  adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi. Nisi minima eveniet temporibus repellendus voluptatum be </p>
-            <img>
-            <h4>Technologies: </h4>
-            <img src="python.png" alt="python" class="label">
-            <img src="django.png" alt="django" class="label">
-            <img src="d3.png" alt="d3" class="label">
-            <img src="angular.png" alt="angular" class="label">
-            <img src="sqlite.png" alt="sqlite" class="label">
-            <img src="HTML.png" alt="HTML" class="label">
-            <img src="CSS.png" alt="CSS" class="label">
-            <img src="JavaScript.png" alt="JS" class="label">
-            <img src="materialize.png" alt="materialize" class="label">
-            <button>La Mode</button>
-        </div>
-        <div id="family">
-            <h3>Family Contacts</h3>
-            <img src="familycontacts.png" alt="Fam Contacts" width="100%">
-            <p>impus ipsum Loremq adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi.
-            Nisi minima eveniet teLorem</p>
-            <h4>Technologies: </h4>
-            <img src="python.png" alt="python" class="label">
-            <img src="django.png" alt="django" class="label">
-            <img src="d3.png" alt="d3" class="label">
-            <img src="angular.png" alt="angular" class="label">
-            <img src="sqlite.png" alt="sqlite" class="label">
-            <img src="HTML.png" alt="HTML" class="label">
-            <img src="CSS.png" alt="CSS" class="label">
-            <img src="JavaScript.png" alt="JS" class="label">
-            <img src="materialize.png" alt="materialize" class="label">
-            <button>La Mode</button>
-        </div>
-        <div id="five">
-            <h4>fiveEleven</h4>
-            <img src="fiveEleven.png" alt="five" width="100%">
-            <p>
-                ßimpus Loremipsum Loremq adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi Nisi minima eveniet te
-            </p>
-            <h4>Technologies: </h4>
-            <img src="python.png" alt="python" class="label">
-            <img src="django.png" alt="django" class="label">
-            <img src="d3.png" alt="d3" class="label">
-            <img src="angular.png" alt="angular" class="label">
-            <img src="sqlite.png" alt="sqlite" class="label">
-            <img src="HTML.png" alt="HTML" class="label">
-            <img src="CSS.png" alt="CSS" class="label">
-            <img src="JavaScript.png" alt="JS" class="label">
-            <img src="materialize.png" alt="materialize" class="label">
-            <button>La Mode</button>
+            
+            <div class="column" id="lamode" class="title">
+                <div class="column-primary">
+                    <h3>La Mode</h3>
+                    <img src="lamode.png" alt="lamode" width="100%">
+                    <p>ipsum Loremq  adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi. Nisi minima eveniet temporibus repellendus voluptatum be </p>
+                    <img>
+                </div>
+                <div class="column-secondary">
+                    <h4>Technologies: </h4>
+                    <img src="python.png" alt="python" class="label">
+                    <img src="django.png" alt="django" class="label">
+                    <img src="d3.png" alt="d3" class="label">
+                    <img src="angular.png" alt="angular" class="label">
+                    <img src="sqlite.png" alt="sqlite" class="label">
+                    <img src="HTML.png" alt="HTML" class="label">
+                    <img src="CSS.png" alt="CSS" class="label">
+                    <img src="JavaScript.png" alt="JS" class="label">
+                    <img src="materialize.png" alt="materialize" class="label">
+                    <button>La Mode</button>
+                </div>
+            </div>
+            <div class="column" id="family">
+                <h3>Family Contacts</h3>
+                <img src="familycontacts.png" alt="Fam Contacts" width="100%">
+                <p>impus ipsum Loremq adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi.
+                Nisi minima eveniet teLorem</p>
+                <h4>Technologies: </h4>
+                <img src="python.png" alt="python" class="label">
+                <img src="django.png" alt="django" class="label">
+                <img src="d3.png" alt="d3" class="label">
+                <img src="angular.png" alt="angular" class="label">
+                <img src="sqlite.png" alt="sqlite" class="label">
+                <img src="HTML.png" alt="HTML" class="label">
+                <img src="CSS.png" alt="CSS" class="label">
+                <img src="JavaScript.png" alt="JS" class="label">
+                <img src="materialize.png" alt="materialize" class="label">
+                <button>La Mode</button>
+            </div>
+            <div class="column" id="five">
+                <h4>fiveEleven</h4>
+                <img src="fiveEleven.png" alt="five" width="100%">
+                <p>
+                    ßimpus Loremipsum Loremq adipisicing elit. Dolores voluptate ducimus modi provident qui, quaerat voluptatibus ab hic a inventore nisi Nisi minima eveniet te
+                </p>
+                <h4>Technologies: </h4>
+                <img src="python.png" alt="python" class="label">
+                <img src="django.png" alt="django" class="label">
+                <img src="d3.png" alt="d3" class="label">
+                <img src="angular.png" alt="angular" class="label">
+                <img src="sqlite.png" alt="sqlite" class="label">
+                <img src="HTML.png" alt="HTML" class="label">
+                <img src="CSS.png" alt="CSS" class="label">
+                <img src="JavaScript.png" alt="JS" class="label">
+                <img src="materialize.png" alt="materialize" class="label">
+                <button>La Mode</button>
+            </div>
         </div>
         <div id="footer">
             <p>nicci.abueg@gmail.com | 206.240.5442</p>

@@ -1,20 +1,21 @@
 *{
- font: 10px arial, sans-serif;
+ font: arial, sans-serif;
+ margin: 0px;
+ padding: 0px;
 }
 
 h3, h4{
     background-color: grey;
     color: white;
     display: block;
-
 }
 .label{
     width: 15px;
     height: 15px;
 }
-.headertext{
+/* .headertext{
     color: black;
-    /* float: right; */
+    float: right;
     display: inline;
     position: absolute;
     top: 25px;
@@ -24,12 +25,12 @@ h3, h4{
     font-family: cursive;
     font-size: 25px;
     color: black;
-    /* float: left; */
+    float: left;
     display: inline;
     position: absolute;
     top: 0px;
     right: 550px;
-}
+} */
 
 .title{
     position: relative;
@@ -39,41 +40,52 @@ h3, h4{
 
 #container{
     height: 700px;
-    width: 700px;
+    width: 950px;
     background-color: #3A3AA5;
     margin: 5px;
-    padding: 5px;
 }
 
 #header{
-    border: 2px solid;
-    border-radius: 25px;
     background-color: lightgrey;
-    height: 80px;
-    width: 660px;
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-    position: relative;
+    padding: 10px 20px;
 }
 
-#photo{
-    width: 300px;
-    height: 200px;
+    #header p, #header h1 {
+        display: inline-block;
+        vertical-align: center;
+    }
+
+    #header h1 {
+        width: 25%;
+    }
+
+    #header p {
+        font-size: 20pt;
+        width: 74%;
+        text-align: right;
+    }
+
+#main {
+    padding: 15px 20px;
+}
+
+#about img{
+    width: 375px;
     border: 4px solid darkgrey;
     display: inline-block; 
     vertical-align: top;
 }
 
-#about{
-    width: 300px;
-    height: 200px;
+#about-content{
+    width: 501px;
+    height: 254.67px;
+    margin-left: 20px;
     background-color: lightcyan;  
     display: inline-block;  
     vertical-align: top;
 }
 
-#lamode{
+.column{
     width: 200px;
     height: 300px;
     background-color: lightblue;
@@ -83,7 +95,7 @@ h3, h4{
     margin: 10px;
 }
 
-#family{
+/* #family{
     width: 200px;
     height: 300px;
     background-color: lightblue;
@@ -101,7 +113,7 @@ h3, h4{
     vertical-align: top;
     position: relative;
     margin: 10px;
-}
+} */
 
 #footer{
     width: 700px;
