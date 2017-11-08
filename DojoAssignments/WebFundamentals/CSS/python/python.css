@@ -60,6 +60,12 @@ br{
     color: lightskyblue;
 }
 
+.mainyellow{
+    color: yellow;
+    font: 15px;
+    font-style: italic;
+}
+
 #header{
     display: inline-block;
 }
@@ -84,6 +90,28 @@ br{
 
 #links{
     display: inline-block;
+    height: 300px;
+    width: 450px;
+    vertical-align: top;
+}
+
+#links a{
+    color: white;
+    font-size: 10px;
+    text-align: center;    
+}
+
+#main{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+#main li{
+    text-decoration: none;
 }
 
 #started{
