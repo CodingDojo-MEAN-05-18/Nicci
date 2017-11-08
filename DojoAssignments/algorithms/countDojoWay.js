@@ -1,3 +1,4 @@
+
 function dojocount(start, end, multi){
     for(var start=1; end<=100; start++){
         console.log(start);
