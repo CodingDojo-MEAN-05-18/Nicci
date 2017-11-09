@@ -1,4 +1,8 @@
 function countbyfours(start, end, multi){
-    while()
+    while(start>0)
+    {
+        console.log("here");
+        start=start-1;
+    }
 }
-countbyfours(2016, 0, 4)
+countbyfours(200, 0, 4)
