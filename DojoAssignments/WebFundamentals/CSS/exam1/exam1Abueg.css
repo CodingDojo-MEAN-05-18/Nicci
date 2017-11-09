@@ -1,0 +1,29 @@
+*{
+}
+
+#container{
+    width: 970px;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+#sectionOne{
+    width: 970px;
+    height: 300px;
+}
+
+.sectionTwo{
+    background-color: lightgray;
+    width: 970px;
+    height: 400px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: inline-block
+}
