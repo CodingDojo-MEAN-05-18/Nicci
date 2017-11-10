@@ -5,21 +5,17 @@
     width: 970px;
     margin: 0px;
     padding: 0px;
-    background-color: white;
+    background-color: lightgrey;
     color: black;
 }
 /* --------------- */
 
 p{
     font-family: 'Petrona';font-size: 12px;
-    /* font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px; */
 }
 
 h1, h2, h3, h4, h5, h6, li, a, button{
     font-family: 'Petrona';
-    /* font-size: 12px; */
-    /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 hr{
@@ -29,39 +25,42 @@ hr{
 /* ----------------- */
 
 #header{
-    width: 970px;
-    height: 35px;
+    width: 960px;
+    height: 40px;
     display: inline-block;
     color: white;
     background-color: black;
-    padding: 5px;
-}
-
-#header ul{
-    display: inline;
+    padding: 0px 0px 0px 10px;
 }
 
 #header h2{
     display: inline;
+    padding: 0px 0px 0px 10px;
+}
+
+#header ul{
+    display: inline;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 180px;
 }
 
 #header li{
     display: inline;
     text-decoration-style: none;
-    padding: 0px 20px;
-    text-align: right;
+    padding: 0px 5px;
 }
 /* ------------------ */
 #sectionOne{
     width: 970px;
-    height: 280px;
+    height: 260px;
     background-color: lightgray;
     display: inline-block;
 }
 
 #sectionOneText{
     display: inline-block;
-    width: 300px;
+    width: 350px;
+    height:220px;
     vertical-align: top;
     margin: 5px 20px;
 }
@@ -71,17 +70,17 @@ hr{
 }
 
 #sectionOne img{
-    width: 450px;   
+    width: 420px;   
     text-align: right;
     display: inline-block;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 130px;
 }
 
 #sectionOne button{
     background-color: black;
     color: white;
     padding: 5px;
-    margin: 0px 40px 0px 0px;
+    margin: 0px 00px 0px 269px;
 
 }
 
@@ -89,7 +88,7 @@ hr{
 .sectionTwo{
     background: linear-gradient(#ACABAB, lightgray);
     width: 970px;
-    height: 370px;
+    height: 350px;
     display: inline-block;
 }
 
@@ -102,7 +101,7 @@ hr{
 }
 
 .sectionTwoColumns img{
-    margin: 5px;
+    margin: 15px 2px 0px 0px;
 }
 
 .sectionTwoColumns h3{
@@ -116,20 +115,21 @@ hr{
     width: 640px;
     display: inline-block;
     vertical-align: top;
+    padding: 5px;
 }
 
 .sectionTwoRight{
     display: inline-block;
-    width: 296px;
+    width: 275px;
     vertical-align: bottom;
     background-color: white;
     padding-left: 10px;
-    margin: 10px 0px 0px 10px;
+    margin: 25px 0px 0px 30px;
 }
 
 .sectionTwoRightText{
     display: inline-block;
-    width: 125px;
+    width: 150px;
 }
 
 .sectionTwoRight h3 p{
@@ -137,7 +137,7 @@ hr{
 }
 
 .sectionTwoRight img{
-    width: 100px;
+    width: 120px;
     vertical-align: top;
 }
 .sectionTwoRightText h3{
@@ -146,8 +146,9 @@ hr{
 }
 
 .sectionTwoRightText a{
-    padding: 0px 0px 0px 3px;
-    margin: 2px 0px 0px 0px;
+    text-align: left;
+    font-size:12px;
+    color: black;
 }
 
 .line{
@@ -159,7 +160,8 @@ hr{
     width:50%;
     top:60px;
     left: 145px;
-    /* color: grey; */
+    padding: 1px;
+    margin: 0px 5px;
      transform:rotate(90deg);
      -o-transform:rotate(90deg);
      -moz-transform:rotate(90deg);
@@ -170,18 +172,22 @@ hr{
     background-color: black;
     color: white;
     display: inline-block;
-    width: 950px;
-    height: 150px;
-    vertical-align: center;
+    width: 960px;
+    height: 200px;
+    margin: 0px 0px 0px 5px;
+}
+
+p{
+    margin: 0px 10px 0px 0px;
 }
 
 .footerColumns{
-    width: 270px;
+    width: 250px;
     height: 125px;
     display: inline-block;
     vertical-align: top;
-    margin: 10px;
-    padding: 15px;
+    margin: 0px 10px;
+    padding: 0px 15px;
 }
 
 #footer button{
@@ -190,9 +196,10 @@ hr{
 }
 
 #copyRightFooter{
-    width: 950px;
+    width: 970px;
     height: 25px;
     text-align: center;
     background-color: lightgray;
-    font-size: 6px;
+    font-size: 10px;
+    padding: 5px 0px 0px 0px;
 }
