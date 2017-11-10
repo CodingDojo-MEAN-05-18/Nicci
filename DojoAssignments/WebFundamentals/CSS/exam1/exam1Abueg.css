@@ -11,12 +11,14 @@
 /* --------------- */
 
 p{
+    /* font-family: 'Fanwood Text'   */
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px; 
+    font-size: 10px;
 }
 
-h1 h2 h3 h4 h5 h6 li{
-    ont-family: Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6, li, a, button{
+    /* font-family: 'Fanwood Text' */
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #header{
@@ -53,29 +55,26 @@ h1 h2 h3 h4 h5 h6 li{
     display: inline-block;
     width: 300px;
     vertical-align: top;
-}
-
-#sectionOne h1{
-    display: inline;
     margin: 5px 20px;
 }
 
-#sectionOne p{
+#sectionOne h1, p{
     display: inline;
-    margin: 5px 20px;
-
 }
 
 #sectionOne img{
     width: 450px;   
     text-align: right;
     display: inline-block;
-    /* margin: 25px 0px 0px 500px; */
+    margin: 25px 0px 0px 0px;
 }
 
 #sectionOne button{
     background-color: black;
     color: white;
+    padding: 5px;
+    margin: 0px 40px 0px 0px;
+
 }
 
 
@@ -87,41 +86,57 @@ h1 h2 h3 h4 h5 h6 li{
     display: inline-block;
 }
 .sectionTwoColumns{
-    width: 250px;
-    height: 300px;
+    width: 195px;
+    height: 100px;
     display: inline-block;
     vertical-align: top;
+}
+.sectionTwoColumns img{
+    margin: 5px;
 }
 
 .sectionTwoColumns h3{
     display: inline-block;
+    margin: 5px;
+    vertical-align: center;
 }
 
-/* I may not need this */
-/* #sectionTwoMain{
-
-} */
-
-#sectionTwoRight{
+#sectionTwoMain{
+    width: 600px;
     display: inline-block;
-    width: 200px;
+    vertical-align: top;
 }
 
-#sectionTwoRight h3 p{
+.sectionTwoRight{
+    display: inline-block;
+    width: 300px;
+}
+
+.sectionTwoRight h3 p{
     display: inline;
-
 }
 
-#sectionTwoRight img{
+.sectionTwoRight img{
     width: 40px;
-}
 
+    
+}
+/* ----------------- */
 #footer{
     background-color: black;
     color: white;
     display: inline-block;
     width: 970px;
     height: 200px;
+}
+.footerColumns{
+    width: 270px;
+    height: 125px;
+    font-size: 7px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
 }
 
 #footer button{
@@ -133,4 +148,6 @@ h1 h2 h3 h4 h5 h6 li{
     width: 950px;
     height: 25px;
     text-align: center;
+    background-color: lightgray;
+    font-size: 6px;
 }
