@@ -11,22 +11,30 @@
 /* --------------- */
 
 p{
-    /* font-family: 'Fanwood Text'   */
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;
+    font-family: 'Petrona';font-size: 12px;
+    /* font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px; */
 }
 
 h1, h2, h3, h4, h5, h6, li, a, button{
-    /* font-family: 'Fanwood Text' */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Petrona';
+    /* font-size: 12px; */
+    /* font-family: Helvetica, Arial, sans-serif; */
 }
 
+hr{
+    margin: 0px;
+}
+
+/* ----------------- */
+
 #header{
-    width: 950px;
+    width: 970px;
     height: 35px;
     display: inline-block;
     color: white;
     background-color: black;
+    padding: 5px;
 }
 
 #header ul{
@@ -77,39 +85,51 @@ h1, h2, h3, h4, h5, h6, li, a, button{
 
 }
 
-
 /* ----------------- */
 .sectionTwo{
-    background: linear-gradient(grey, lightgray);
+    background: linear-gradient(#ACABAB, lightgray);
     width: 970px;
-    height: 400px;
+    height: 370px;
     display: inline-block;
 }
+
 .sectionTwoColumns{
     width: 195px;
-    height: 100px;
+    height: 150px;
     display: inline-block;
     vertical-align: top;
+    padding: 0px 5px;
 }
+
 .sectionTwoColumns img{
     margin: 5px;
 }
 
 .sectionTwoColumns h3{
     display: inline-block;
-    margin: 5px;
-    vertical-align: center;
+    margin: 20px 0px 10px 0px;
+    vertical-align: top;
+
 }
 
 #sectionTwoMain{
-    width: 600px;
+    width: 640px;
     display: inline-block;
     vertical-align: top;
 }
 
 .sectionTwoRight{
     display: inline-block;
-    width: 300px;
+    width: 296px;
+    vertical-align: bottom;
+    background-color: white;
+    padding-left: 10px;
+    margin: 10px 0px 0px 10px;
+}
+
+.sectionTwoRightText{
+    display: inline-block;
+    width: 125px;
 }
 
 .sectionTwoRight h3 p{
@@ -117,22 +137,47 @@ h1, h2, h3, h4, h5, h6, li, a, button{
 }
 
 .sectionTwoRight img{
-    width: 40px;
-
-    
+    width: 100px;
+    vertical-align: top;
 }
+.sectionTwoRightText h3{
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+}
+
+.sectionTwoRightText a{
+    padding: 0px 0px 0px 3px;
+    margin: 2px 0px 0px 0px;
+}
+
+.line{
+    position: relative;
+}
+
+.line_diagonal {
+    position: absolute;
+    width:50%;
+    top:60px;
+    left: 145px;
+    /* color: grey; */
+     transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+     -webkit-transform:rotate(90deg);}
 /* ----------------- */
+
 #footer{
     background-color: black;
     color: white;
     display: inline-block;
-    width: 970px;
-    height: 200px;
+    width: 950px;
+    height: 150px;
+    vertical-align: center;
 }
+
 .footerColumns{
     width: 270px;
     height: 125px;
-    font-size: 7px;
     display: inline-block;
     vertical-align: top;
     margin: 10px;
