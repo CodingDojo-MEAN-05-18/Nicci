@@ -170,36 +170,56 @@ hr{
 
 #footer{
     background-color: black;
-    color: white;
+    color: grey;
     display: inline-block;
-    width: 960px;
-    height: 200px;
-    margin: 0px 0px 0px 5px;
-}
-
-p{
-    margin: 0px 10px 0px 0px;
+    width: 970px;
+    height: 175px;
 }
 
 .footerColumns{
-    width: 250px;
-    height: 125px;
+    width: 265px;
     display: inline-block;
     vertical-align: top;
     margin: 0px 10px;
     padding: 0px 15px;
 }
 
+.footerColumns h3{
+    margin: 5px 0px 10px 0px;
+}
+
+.footerColumnsShortText{
+    width: 90px;
+    height: 16px;
+    color: grey;
+    background-color: #252525;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.footerColumnsLongText{
+    width: 185px;
+    height: 16px;
+    color: grey;
+    background-color: #252525;
+    margin: 5px 0px;
+    display: inline-block;
+    font-size: 10px;
+}
+
 #footer button{
     background: linear-gradient(grey,black);
     color: white;
+    border: 0 none black;
 }
 
-#copyRightFooter{
+/* ------------- */
+.copyRightFooter{
     width: 970px;
     height: 25px;
     text-align: center;
     background-color: lightgray;
+    color: gray;
     font-size: 10px;
-    padding: 5px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
