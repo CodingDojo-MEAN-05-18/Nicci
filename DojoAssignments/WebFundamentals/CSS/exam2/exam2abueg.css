@@ -1,0 +1,154 @@
+*{
+
+}
+
+#container{
+    width: 970px;
+    height: 965px;
+    padding: 5px 5px 0px 5px;
+    background-color: #0E0E3D;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container h2{
+    padding: 5px 5px 5px 15px;
+}
+
+#container h2, h3{
+    display: inline;
+}
+
+#container ul :first-child{
+    color: lightskyblue;
+}
+
+.headerBlue{
+    color: #317FDA;
+}
+
+ul{
+    display: inline;
+    padding: 5px;
+    margin: 5px 5px 5px 315px;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+p{
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------ */
+#main{
+    background-color: white;
+    margin: 5px 5px 0px 5px;
+    height: 870px;
+    width: 940px;
+    padding: 10px;
+}
+
+.largeImg{
+    width: 940px;
+}
+
+.smallImg{
+    width: 250px;
+}
+
+.maininfoRow1{
+    width: 275px;
+    height: 185px;
+    padding: 15px;
+    margin: 10px 2px;
+    background-color: #3C61A1;
+    color: white;
+    display: inline-block;
+}
+
+.maininfoRow1 h3{
+    vertical-align: top;
+}
+
+.maininfoRow1 img{
+    width: 40px;
+    margin: -5px 5px 5px -5px;
+}
+
+button{
+    background: linear-gradient(#68B9FC, #386FC0);
+    color: white;
+    border: 0 none blue;
+    margin: 65px 0px 0px 0px;
+    padding: 10px 40px;
+}
+/* ------------ */
+.maininfoRow2{
+    width: 275px;
+    height: 185px;
+    padding: 15px;
+    margin: 5px 2px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.justify{
+    /* text-align: justify; */
+    margin: 0px -15px;
+}
+
+.maininfoRow2 img{
+    width: 308px;
+    height: 180px;
+    margin: 0px 0px 0px -17px;
+}
+
+.pPadding{
+    margin: 10px 0px;
+    padding: 15px 0px 10px 0px;
+}
+.maininfoRow2 a{
+    color: #1355B8;
+    text-decoration: none;
+}
+
+.smallerText{
+    font-size: 8px;
+    padding: 15px 0px;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 12px;
+    padding: 15px 15px 15px 40px;
+    margin: 15px 0px 10px 0px;
+    background-color: #C5E3FF;
+}
+
+/* --------------- */
+
+#footer{
+    background-color: #E7EFFD;
+    color: blue;
+    font-size: 8px;
+    height: 15px;
+    width: 960px;
+    margin: 2px 0px 0px 5px;
+    padding: 10px 0px;
+}
+
+#footer ul li{
+    text-align: center;
+}
+
+#footer ul :first-child{
+    color: #7BBDE4
+}

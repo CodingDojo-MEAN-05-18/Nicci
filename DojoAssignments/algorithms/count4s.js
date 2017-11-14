@@ -1,8 +1,8 @@
 function countbyfours(start, end, multi){
-    while(start>0)
+    while(start>end)
     {
-        console.log("here");
-        start=start-1;
+        console.log(start);
+        start=start-multi;
     }
 }
-countbyfours(200, 0, 4)
+countbyfours(10, 8, 2)
