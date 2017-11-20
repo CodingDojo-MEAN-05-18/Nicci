@@ -1,0 +1,23 @@
+*
+
+#container{
+    width: 970px;
+}
+
+ img {
+     width: 210px;
+     height: 210px;
+     margin: 10px;
+     border: 3px solid black;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+ }
+ 
+ button{
+     color: white;
+     background-color: green;
+     border: 3px solid black;
+     padding: 2px 10px;
+     margin: 2px 10px;
+ }
