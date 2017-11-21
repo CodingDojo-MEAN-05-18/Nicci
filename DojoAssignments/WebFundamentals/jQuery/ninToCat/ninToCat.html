@@ -44,23 +44,53 @@
     });
     </script> -->
     <script>
-        $(document).ready(function(){
-            $('#lineOne').click(function () {
-                $(this).attr('img').toggle();
-            })    
-        });        
+    $(document).ready(function(){   
+        $(document).on('click', '#lineOne', function () {
+            $(this).children().toggle();
+        }) 
+        $(document).on( 'click', '#lineTwo', function(){
+            $(this).children().toggle();
+        })  
+        $(document).on('click', '#lineThree', function(){
+            $(this).children().toggle();
+        })    
+        $(document).on('click', '#lineFour', function(){
+            $(this).children().toggle();
+        })
+        $(document).on('click', '#lineFive', function () {
+            $(this).children().toggle();
+        })
+    });  
     </script>
 </head>
 <body>
     <div id="container">
         <div id="lineOne">
-            <img src='ninja0.png' data-alt-src='cat0.png' />
+            <img src="ninja0.png" alt="ninja" />
+            <img src="cat0.png" alt="cat" style="display:none   " />
         </div>
-        <img src='ninja0.png' data-alt-src='cat0.png' />
-        <img src='ninja1.png' data-alt-src='cat1.png' />
-        <img src='ninja2.png' data-alt-src='cat2.png' />
-        <img src='ninja3.png' data-alt-src='cat3.png' />
-        <img src='ninja4.png' data-alt-src='cat4.png' />  
+
+        <div id="lineTwo">
+            <img src="ninja1.png" alt="ninja" />
+            <img src="cat1.png" alt="cat" style="display:none   " />
+        </div>    
+
+        <div id="lineThree">
+            <img src="ninja2.png" alt="ninja" />
+            <img src="cat2.png" alt="cat" style="display:none   " />
+        </div>
+
+        <div id="lineFour">
+            <img src="ninja3.png" alt="ninja" />
+            <img src="cat3.png" alt="cat" style="display:none   " />
+        </div>
+
+        <div id="lineFive">
+            <img src="ninja4.png" alt="ninja" />
+            <img src="cat4.png" alt="cat" style="display:none   " />
+        </div>
+
+        <img src='cat4.png' data-alt-src='ninja4.png' />
     </div>
 </body>
 </html>
