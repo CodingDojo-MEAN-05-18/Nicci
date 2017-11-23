@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover Assignment</title>
+        <link rel="stylesheet" type="text/css" href="hover.css">
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function (){
+                $('img').hover(function(){
+                    var currentSrc=$(this).attr('src');
+                    var currentAltSrc=$(this).attr('data-alt-src');
+                    $(this).attr('data-alt-src', currentSrc);
+                    $(this).attr('src', currentAltSrc);
+                })
+
+            });
+        </script>
+</head>
+<body>
+    <div id="container">
+        <img src="adventure-cat.png" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="chellocat.jpg" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="coder2.jpg" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="cooler.png" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="domo-cat.png" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="ironcat.png" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="kantana.jpg" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        <img src="oktobercat.png" data-alt-src="http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg">
+        
+    </div>
+    
+</body>
+</html>

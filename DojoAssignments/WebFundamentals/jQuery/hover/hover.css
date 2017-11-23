@@ -1,0 +1,18 @@
+*
+body
+{
+    background-image: url('oktobercat.png');
+}
+
+
+#container{
+    width: 970px;
+    height: 700px;
+    /* background-color: lightskyblue; */
+}
+
+img{
+    width: 220px;
+    height: 220px;
+    border: 1px solid black;
+}
