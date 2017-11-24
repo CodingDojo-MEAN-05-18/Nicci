@@ -1,0 +1,36 @@
+*
+
+#container{
+    width: 970px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header{
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.form{
+    width: 500px;
+    height: 400px;
+    background-image: url('http://hinduismnow.org/wp-content/uploads/2016/06/om-decorative.jpg');
+    text-align: right;
+    display: inline-block;
+}
+
+label{
+    display: inline-block;
+    align-content: right;
+    margin: 0px 0px 0px 200px;
+    padding: 4px;
+}
+
+hr{
+    text-decoration-line: 2px black solid;
+}
+h4{
+    display: inline;
+    padding: 2px;
+    margin: 0px 40px 0px 0px;
+}
