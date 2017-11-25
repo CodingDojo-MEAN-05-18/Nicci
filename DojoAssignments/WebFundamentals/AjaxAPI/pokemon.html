@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon API</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pokedeck = [];
+            for(var i =1; i<152; i++){
+                $('#wrapper').append("<img src="+"https://pokeapi.co/media/img/" + i + ".png"+">");
+
+                // $.get("https://pokeapi.co/media/img/" + i + ".png" + ">", function (res) {
+                //     $('#info').html("<h2>" + res.abilities[i].name + "</h2>");
+                // }, 'json');                           
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+    </div>
+    <div id="info">
+    </div>
+    
+</body>
+</html>
