@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Card Assignment</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var firstname = [];
+            var lastname = [];
+            var describe = [];
+            var counter = 0;
+            $('form').submit(function () {
+                $('#displaydata').append("<div class=" + counter + ">" + "<p>" + $('#first_name').val() + " " + $('#last_name').val() + "</p><br><h3>See Description</h3>" + "</div><br>");
+                firstname.push($('#first_name').val());
+                lastname.push($('#last_name').val());
+                describe.push($('#description').val());
+                $(".user_input").val(""); //.val(), as a setter function, sets empty
+                counter+=1;
+                return false
+            });
+            $(document).on('click', 'h3', function () {
+                //I am grabbing the class attribute of the div just appended to the displaydata div
+                $(this).parent().html('<p>' + describe[$(this).parent().attr("class")] + '</p>');
+            });
+            $(document).on('click', 'p', function () {
+                //I am grabbing the parent class attribute of the p tag just click on, p tag is the child of displaydata div (contains index for array)
+                $(this).parent().html("<p>" + firstname[$(this).parent().attr('class')] + " " + lastname[$(this).parent().attr('class')] + "</p><br><h3>See Description</h3>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="userinput">
+            <form>
+                <input class="user_input" id="first_name" type="text" placeholder="First Name"><br>
+                <input class="user_input" id="last_name" type="text" placeholder="Last Name"><br>
+                <input class="user_input" id="description" type="text" placeholder="Enter User Description"><br>
+                <input type="submit" value="Add User">
+            </form>
+        </div>
+        <div id="displaydata">
+
+        </div>
+    </div>
+</body>
+
+</html>

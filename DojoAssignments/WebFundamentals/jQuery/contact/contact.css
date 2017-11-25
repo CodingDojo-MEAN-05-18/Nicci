@@ -1,0 +1,38 @@
+*
+#container{
+  width: 970px;
+  height: 900px;
+  border: 1px solid pink;
+  position: relative;
+  display: inline-block;
+}
+#displaydata{
+  border: 2px solid black;
+  display: inline-block;
+  width: 400px;
+}
+#userinput{
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  border: 20px;
+  margin: 20px;
+}
+
+ul{
+  text-decoration: none;
+}
+li{
+  text-decoration: none;
+  display: inline;
+}
+#displaydata div{
+  border: 1px solid darkblue;
+  color: white;
+  background-color: lightblue;
+  text-align: center;
+}
