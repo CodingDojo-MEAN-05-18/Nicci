@@ -12,9 +12,10 @@
             for(var i =1; i<152; i++){
                 $('#wrapper').append("<img src="+"https://pokeapi.co/media/img/" + i + ".png"+">");
 
-                // $.get("https://pokeapi.co/media/img/" + i + ".png" + ">", function (res) {
-                //     $('#info').html("<h2>" + res.abilities[i].name + "</h2>");
-                // }, 'json');                           
+//  why does this not work?  must be due to res???
+                $.get("https://pokeapi.co/media/img/1.png" + ">", function (res) {
+                    $('#info').html("<h2>" + res.abilities[i].name + "</h2>");
+                }, 'json');                           
             }
         });
     </script>
