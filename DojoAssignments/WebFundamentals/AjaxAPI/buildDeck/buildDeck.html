@@ -4,30 +4,29 @@
 <head>
     <meta charset="utf-8">
     <title>Build Poke Deck</title>
-    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
-    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
-    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function () {
-            $("form").submit(function () {
+        $(document).ready(function(){
+            $("form").submit(function(){
+                event.preventDefault();
                 var pokemon = $('#pokemon_number').val();
                 console.log(pokemon);
-                $.get('https://swapi.co/people/' + pokemon + '/', function (data) {
+                $.get('https://pokeapi.co/api/v1/pokemon/' + pokemon, function (data) {
                     console.log(data);
                     //.get(general url string) and then "function", which is the call back function + data type (here is json), which can be json, xml and html
-                    // $('body').append(data.attack);
+                    $('body').append(data.attack);
                     var html_str = "";
                     html_str += "<h1>Pokemon" + data.name + "</h1>";
                     html_str += "<p>Defense:" + data.defense + "</p>";
                     html_str += "<p>Attack:" + data.attack + "</p>";
                     $('body').append(html_str);
-                    // $('body').append(data['attack']);
+                    $('body').append(data['attack']);
                 }, 'json');
                 $('.user_input').val(''); //.val, as setter funntion
-                // $.post(url, data, function(data){
-                //   console.log(data);
-                // },'json');
+                $.post('https://pokeapi.co/api/v1/pokemon/', data, function(data){
+                  console.log(data);
+                },'json');
                 return false
             });
         });
