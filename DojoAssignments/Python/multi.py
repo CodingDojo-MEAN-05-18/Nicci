@@ -45,11 +45,9 @@
 def sum(arr):
     a = 0
     b = 0
-    # c = len(arr)
     for n in range(0,len(arr)):    
         a = arr[n]
         b = b + a
-    print b 
     print b/len(arr)
 sum([1, 2, 5, 10, 255, 3])
 
