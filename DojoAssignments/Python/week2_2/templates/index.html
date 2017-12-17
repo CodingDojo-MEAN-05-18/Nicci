@@ -25,14 +25,14 @@
     {% endfor %} 
     
     <h2>Login</h2>
-    <form action="/process" methods="POST">
+    <form action="/process" method="POST">
         <input type="hidden" name="action" value="login">
         <input type="text" name="first_name">
         <input type="submit">
     </form>
 
     <h2>Register</h2>
-    <form action="/process/register" methods="POST">
+    <form action="/process/register" method="POST">
         <input type="hidden" name="action" value="register">
         <input type="text" name="first_name">
         <input type="submit">

@@ -24,14 +24,13 @@ def moment(moment_id):
 def hello(name):
     return render_template("hello.html", name=name)
 
-@app.route('/process', methods=["GET","POST"])   
+@app.route('/process', methods=["POST"])   
 def process():
-    return "hello"
-    # if request.form["action"] == "register":  
-    #     pass
-    # elif request.form["action"] == "login":
-    #     session["name"] = request.form["first_name"]
-    #     return redirect('/hello/' + session["name"]) 
+    if request.form["action"] == "register":  
+        pass
+    elif request.form["action"] == "login":
+        session["name"] = request.form["first_name"]
+        return redirect('/hello/' + session["name"]) 
 
 @app.route('/logout', methods=["GET"])        
 def logout():
