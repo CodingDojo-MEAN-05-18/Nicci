@@ -4,4 +4,4 @@ function popFront(array){
     }
     console.log(array)
 }
-popFront([1,2,'bokb']);
+popFront([8,1,2,'bokb']);

@@ -17,4 +17,13 @@ def create_user():
     session['email'] = request.form['email']
     return redirect('/show')
 
+@app.route('/process', methods=['POST'])
+def process():
+    if request.form["action"] == "register":
+        pass #do some registration
+    elif request.form["action"] == "login":
+        session['email'] = request.form['email']
+        session['password'] = request.form['password']
+        return redirect('/show')        
+
 app.run(debug=True)    
