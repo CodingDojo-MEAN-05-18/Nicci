@@ -9,7 +9,7 @@ def index():
 
 @app.route('/process', methods=['POST'])
 def process():
-    print 'in process route'
+    print 'in process route' *3
     if len(request.form['name']) == 0:
         flash('Name can not be empty')
     if len(request.form['description']) < 1:  
@@ -21,16 +21,16 @@ def process():
     if len(request.form['location']) < 2:
         flash('select a location')          
     else:
-        print 'in the else statement'
+        print 'in the else statement'*3
         flash("Thank you {}".format(request.form['name']))
-        return redirect('/')   
+        # return redirect('/')   
     session['submitted_info'] = request.form
+    print "after submitted-info**********"*2
     return redirect('/submitted')
 
 
-
-@app.route('/submitted', methods=['POST'])  
-def submitted():
+@app.route('/submitted')  
+def submit():
     return render_template('submitted.html', result=session['submitted_info']) 
 
 app.run(debug=True)    

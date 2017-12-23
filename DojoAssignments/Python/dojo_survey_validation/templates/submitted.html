@@ -8,11 +8,12 @@
 </head>
     <body>
         <div id='container'>
-            <h1>Submitted Information: {{ session['name'] }}</h1>
-            <p>Name: </p>
-            <p>Location: </p>
-            <p>Favorite Language: </p>
-            <p>Comment: </p>
+            <p>{{session['submitted_info']}}</p>
+            <h1>Submitted Information: {{ result.name }}</h1>
+            <p>Name: {{ result.name }} </p>
+            <p>Location: {{ result.location }}</p>
+            <p>Favorite Language: {{ result.language }} </p>
+            <p>Comment: {{ result.description }}</p>
 
         </div>
     </body>
