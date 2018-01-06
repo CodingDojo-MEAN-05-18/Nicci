@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valid Users</title>
+</head>
+<body>  
+    <h2>Enter Valid Email</h2> 
+    {% with messages = get_flashed_messages() %} 
+        {% if messages %} 
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %} 
+        {% endif %} 
+    {% endwith %}
+    <h2>Valid Users Email</h2>
+    {% for user in all_users %}
+        <p>ID: {{ user['id'] }}</p>
+        <p>Email: {{ user['email'] }}</p>
+        <p>Created At: {{ user['created_at'] }}</p>
+    {% endfor %}
+    <form action="/email_check" method='POST'>
+        <label for="email">Email Address: <input type='text' name='email' id='email'></label>
+        <input type='submit' value='Submit'>
+    </form>
+    
+</body>
+</html>

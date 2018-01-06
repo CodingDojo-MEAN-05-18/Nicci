@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valid Users</title>
+</head>
+
+<body>
+     {% with messages = get_flashed_messages() %} 
+        {% if messages %} 
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %} 
+        {% endif %} 
+    {% endwith %}
+    {{ all_users }}
+    <h2>Valid Users Email</h2>
+    {% for user in all_users %}
+        <p>ID: {{ user['id'] }}</p>
+        <p>Email: {{ user['email'] }}</p>
+        <p>Created At: {{ user['created_at'] }}</p>
+    {% endfor %}
+    <button>Delete Email</button>
+    <form action="/">
+        <input type="submit" value="Return Home: Enter New Email">
+    </form>
+</body>
+
+</html>
