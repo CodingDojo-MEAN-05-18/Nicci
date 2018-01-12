@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, session, flash, request
-# from myconnection import MySQLConnector
+from myconnection import MySQLConnector
 
 app = Flask(__name__)
 app.secret_key = "shhh...it's secret"
@@ -7,7 +7,7 @@ app.secret_key = "shhh...it's secret"
 import re
 
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9\.\+_-]+@[a-zA-Z0-9\._-]+\.[a-zA-Z]*$')
-# mysql = MySQLConnector(app, 'friends')
+mysql = MySQLConnector(app, 'friends')
 
 @app.route('/')
 def index():
@@ -56,10 +56,35 @@ def registration():
     elif valid == False:
         return redirect('/')
 
-     
-    
+@app.route('/login', methods=["POST"])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+    query = 'SELECT * FROM users WHERE username=:one'    
+    data = {
+        'one':username
+    }
+    user = mysql.query_db(query, data)
+    if len(user) == 0:
+        flash("need a user name with characters")
+        return redirect('/')
+    else:
+        user = user[0]    
+        if user['password'] == password:
+            flash['wooho logged in']
+            session['id'] = user['id']
+            return redirect('/success')
+        else:
+            user = user[0]
+            if user['password'] == password
+    return 'hit login route'    
 
 @app.route('/success')
 def success():
-    return 'hit success route'
+    query = 'SELECT username FROM users WHERE id=:inject_one'
+    data = {
+        'inject_one':session['id']
+    }
+    logged_user = mysql.query_db(query, data)[0]
+    return logged_user['username']
 app.run(debug=True)            

@@ -29,7 +29,7 @@
     </fieldset>
     <fieldset>
         <legend>Log In:</legend>
-            <form action="">
+            <form action="/login" method='POST'>
                 First Name: <input type="text" name="first_name"> 
                 Last Name: <input type="text" name="last_name">
                 Password: <input type="text" name="password"> 
@@ -38,8 +38,7 @@
             </form>
     </fieldset>
     <fieldset>
-        <legend>Registered Users</legend>
-            
+        <legend>Registered Users</legend>       
             {% for user in all_users %}
             <p>ID: {{ user['id'] }}</p>
             <p>First Name: {{ user['first_name'] }}</p>

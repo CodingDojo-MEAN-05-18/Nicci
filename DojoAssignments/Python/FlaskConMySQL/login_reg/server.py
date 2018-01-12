@@ -23,7 +23,6 @@ def reg():
     email = request.form["email"]
     password = request.form["password"]
     confirm_password = request.form["confirm_password"]
-    pw_hash = bcrypt.generate_password_hash(password) #is hash just a dictionary?-no
     print'*'*40
     print first_name
     print last_name
@@ -48,53 +47,59 @@ def reg():
     if confirm_password != password:
         flash('password must be 8 characters and match confirm password')  
         valid = False 
-
     if valid == True:
-        return "User is Registered!"  
-        # i want to flash "user is registered" but have a button to display registered users and a button to get back to register more users or log in 
+        pw_hash = bcrypt.generate_password_hash(password) #is hash just a dictionary?-no
+        insert_query = "INSERT INTO users (first_name, last_name, email, pw_hash, created_at, updated_at) VALUES (:first_name, :last_name, :email, :pw_hash, NOW(), NOW())"   
+        query_data = { 'first_name': first_name, 'last_name': last_name, 'email': email, 'pw_hash': pw_hash } 
+        mysql.query_db(insert_query, query_data)
+
+        query_newuser = 'SELECT * FROM users WHERE first_name=:new'
+        data_newuser= {
+            'new':first_name
+        }
+        user_newuser = mysql.query_db(query_newuser, data_newuser)
+        try:    
+            user_newuser = user_newuser[0]  
+        except IndexError:
+            return redirect('/') 
+
+        session['id'] = user_newuser['id']
+        flash("User is Registered!")
+        return redirect('/logged_in')
     elif valid == False:
         return redirect('/')
-    #the Bcrypt example inserts created_at - do I need to do this and why or why not both timestamps?
-    insert_query = "INSERT INTO users (first_name, last_name, email, password, created_at, updated_at) VALUES (:first_name, :last_name, :email, :password,  NOW(), NOW())"   
-    query_data = { 'first_name': first_name, 'last_name': last_name, 'email': email, 'password': password } 
-    mysql.query_db(insert_query, query_data)
-
 
 @app.route('/login', methods=["POST"])
 def login():
-    #how do i make this work for first_name and last_name??
     first_name = request.form['first_name']
-    # last_name = request.form['last_name']
     password = request.form['password']
     query = 'SELECT * FROM users WHERE first_name=:one'    
-    data = {
-        'one':first_name
-    }
+    data = { 'one':first_name }
     user = mysql.query_db(query, data)
-    if len(user) == 0:
-        flash("need a user name with characters")
-        return redirect('/')
+    print "above try statement for login ***"*3
+    try:    
+        user = user[0] 
+    except IndexError:
+        return redirect('/') 
+
+    if bcrypt.check_password_hash(user['pw_hash'], password): 
+        session['id'] = user['id']
+        return redirect('/logged_in')
     else:
-        user = user[0]    
-        if user['password'] == password:
-            flash['Logged into to application']
-            session['id'] = user['id']
-            return redirect('/logged_in')
-        else:
-            flash('invalid password')
-            return redirect('/')
-            # user = user[0]
-            # if user['password'] == password:
-    return 'end of else statement'
+        flash('invalid password and / or first name')
+        return redirect('/')
+    return 'end of /login route'
 
 @app.route('/logged_in')
 def logged_in():
-    query = 'SELECT username FROM users WHERE id=:inject_one'
+    query = 'SELECT first_name FROM users WHERE id=:inject_one'
     data = {
         'inject_one':session['id']
     }
     logged_user = mysql.query_db(query, data)[0]
-    return logged_user['first_name']    
+    print logged_user
+    print "&"*25
+    return render_template('view.html', logged_user = logged_user)
 
 @app.route('/logout')
 def logout():
