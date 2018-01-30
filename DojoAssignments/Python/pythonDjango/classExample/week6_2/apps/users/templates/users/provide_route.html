@@ -10,11 +10,7 @@
     {% if messages %}
     <ul>
         {% for msg in messages %}
-        <li>
-            <div role="alert">
-                {{msg.message}}
-            </div>
-        </li>
+        <li>{{msg.message}}</li>
         {% endfor %}
     </ul>
     {% endif %}

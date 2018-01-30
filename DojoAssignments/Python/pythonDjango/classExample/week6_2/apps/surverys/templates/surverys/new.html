@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register New User</title>
+</head>
+
+<body>
+    <form action="/surveys" method="POST">
+        {%csrf_token%}
+        <input type="text" name="name">
+        <input type="text" name="email">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>
