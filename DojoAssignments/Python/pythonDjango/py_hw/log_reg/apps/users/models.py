@@ -16,7 +16,7 @@ class UserManager(models.Manager):
             errors.append("Name fields must be 3 characters or more")
         if len(data['password']) < 5:
             errors.append("password must be 5 or more characters")  
-        if not re.match(NAME_REGEX, data['first_name'] or not re.match(NAME_REGEX, data['last_name'])):
+        if not re.match(NAME_REGEX, data['first_name']) or not re.match(NAME_REGEX, data['last_name']):
             errors.append('name fields must be ONLY characters')
         if not re.match(EMAIL_REGEX, data['email']):
             errors.append('please enter valid email')
