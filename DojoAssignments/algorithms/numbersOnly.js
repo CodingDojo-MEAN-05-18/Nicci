@@ -1,6 +1,6 @@
 function numbersOnly(arr){
     var array =[];
-    for(var i=0;i<arr.length;i++){
+    for(var i = 0; i < arr.length; i++){
         if(typeof arr[i] === "number"){
             array.push();
         }
@@ -8,5 +8,5 @@ function numbersOnly(arr){
     console.log(array);
 }
 
-numbersOnly([0, true, false]);
-console.log(document.body);
+console.log(numbersOnly([0, true, false]));
+// console.log(numbersOnly());
