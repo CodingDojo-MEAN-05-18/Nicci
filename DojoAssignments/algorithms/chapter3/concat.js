@@ -45,7 +45,8 @@ function concat(arr1, arr2) {
     for(var i= 0; i<arr2.length;i++){
         newArr.push(arr2[i]);
     };
-
+    console.log(arr1);
+    console.log(arr2);
     return newArr;
 };
 
