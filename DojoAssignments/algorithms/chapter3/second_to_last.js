@@ -1,7 +1,8 @@
 function second_to_last(arr){
     var value;
     if(arr.length < 2){
-        return "array is too short to properly evaluate.";
+        arr = null;       
+        return ("array is too short to properly evaluate." + ("return: " + arr));
     } else {
         value = arr[arr.length - 2];
         return ("second to last value in array: " + value);
