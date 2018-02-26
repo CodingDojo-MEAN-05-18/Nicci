@@ -10,8 +10,8 @@ def index(request):
             Survey.objects.create(survey=request.POST["survey"])
         else:
             for error in result[1]:
-                messages.error(req, error)
-        return redirect("surverys/new.html")    
+                messages.error(request, error)
+        return redirect("surveys/new")    
     elif request.method =="GET":
         context ={
         "all_surveys":Survey.objects.all(),
@@ -20,3 +20,9 @@ def index(request):
 
 def new(request):
     return render(request, "surverys/new.html")
+
+def show_or_update(request):
+    context = {
+        "all_surveys": Survey.objects.all()
+    }    
+    return render(request,"surverys/show.html",context)

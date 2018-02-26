@@ -1,7 +1,8 @@
 from django.conf.urls import url
 from . import views
 
-urlspatterns = [
-    url(r'^surveys$', views.index),
-    url(r'^surveys/new$', views.new),
+urlpatterns = [
+    url(r'^$', views.index),
+    url(r'^new$', views.new),
+    url(r'^show$', views.show_or_update),
 ]

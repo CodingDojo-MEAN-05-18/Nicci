@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    {{ user.fname }}
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
@@ -28,7 +29,6 @@
                     <th>comment</th>
                 </thead>
                 <tbody>
-                    {% for user in all_users %}
                     <tr>
                         <td>{{ user.fname }}</td>
                         <td>{{ user.lname }}</td>
@@ -36,7 +36,6 @@
                         <td>{{ user.language }}</td>
                         <td>{{ user.comment}}</td>
                     </tr>
-                    {% endfor %}
                     <tr>
                         <td>{{ request.session.fname }}</td>
                         <td>{{ request.session.lname }}</td>

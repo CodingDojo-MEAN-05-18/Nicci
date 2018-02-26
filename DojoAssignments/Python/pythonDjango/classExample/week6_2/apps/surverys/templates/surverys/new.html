@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Register New User</title>
 </head>
-
 <body>
-    <form action="/surveys" method="POST">
+    <h4>Register New Survey</h4>
+    <form action="new" method="POST">
         {%csrf_token%}
-        <input type="text" name="name">
-        <input type="text" name="email">
+        <input type="text" name="survey">
         <input type="submit" name="submit">
     </form>
 </body>

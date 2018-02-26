@@ -20,7 +20,8 @@ class UserManager(models.Manager):
             errors.append("no blanks fields")
         # for key in data:
         #     if data[key] == '':
-        #         errors['empty_field'] = 'no blanks'
+        #         return False
+        #     return True    
         if len(data['first_name']) < 2 or len(data['last_name']) < 2:
             errors.append("Name fields must be 3 characters or more")
         if len(data['password']) < 5:

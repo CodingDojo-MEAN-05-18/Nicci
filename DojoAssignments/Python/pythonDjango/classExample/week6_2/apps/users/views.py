@@ -4,6 +4,7 @@ from django.contrib import messages
 # from .models import User
 from .models import *
 
+#week6_2
 # Create your views here.
 def index(req):
     if req.method == "POST":
@@ -12,7 +13,7 @@ def index(req):
             User.objects.create(name=req.POST["name"],email=req.POST["email"])
         else:
             for error in result[1]:
-                messages.error(req, error)    
+                messages.error(req, error)
         return redirect("/users/new")
     elif req.method == "GET":    
         context = {
@@ -22,10 +23,6 @@ def index(req):
 
 def land(request):
     return render(request, "users/land.html")   
-
-# def provide_route(request): 
-#     messages.info(request, "This is unknown route.")   
-#     return render(request, "users/provide_route.html")   
 
 def new(request):
     return render(request, "users/new.html")  
