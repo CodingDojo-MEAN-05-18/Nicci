@@ -9,19 +9,9 @@ NAME_REGEX = re.compile(r'^[A-Za-z]\w+$')
 # Create your models here.
 class UserManager(models.Manager):
     def validate_reg(self, data):
-        # print data
-        # print len(data["first_name"]) == 0
-        # print len(data["last_name"]) == 0
-        # print len(data["password"]) == 0
-        # print len(data["password_confirm"]) == 0
-        # print len(data["email"]) == 0
         errors = []
         if len(data['first_name']) == 0 or len(data['last_name']) == 0 or len(data['password']) == 0 or len(data['password_confirm']) == 0 or len(data['email']) == 0:
             errors.append("no blanks fields")
-        # for key in data:
-        #     if data[key] == '':
-        #         return False
-        #     return True    
         if len(data['first_name']) < 2 or len(data['last_name']) < 2:
             errors.append("Name fields must be 3 characters or more")
         if len(data['password']) < 5:
@@ -35,10 +25,8 @@ class UserManager(models.Manager):
             errors.append('email in use currently')
         if data['password'] != data['password_confirm']:
             errors.append('Oh nooo.... passwords are not a match.') 
-        #why the number 5?
         if not errors:
             hashed = bcrypt.hashpw((data['password'].encode()), bcrypt.gensalt(8))    
-
             new_user = self.create(
                 first_name = data['first_name'],
                 last_name = data['last_name'],
