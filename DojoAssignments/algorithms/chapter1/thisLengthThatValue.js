@@ -1,5 +1,9 @@
 
 function thisLength(num1, num2){
+    if (num1 == num2) {
+        console.log("jinx");
+    }
+    else{
     var arr=[];
     for(var i=1; i<=num1; i++)
     {
@@ -8,5 +12,6 @@ function thisLength(num1, num2){
     }
     console.log(arr);
 }
+}
 
-(thisLength(3,2));
+(thisLength(2,2));

@@ -21,7 +21,7 @@ function nth_largest(arr, nth_place){
     // return value_in_nth_place;
     return new_arr;
 }
-console.log(nth_largest([4,1,8],2));
+console.log(nth_largest([4,1,5,8],2));
 
 // you need to order from largest to nth order
 // loop thru all of the number and place in array in order 
