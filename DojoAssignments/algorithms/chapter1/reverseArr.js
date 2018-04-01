@@ -19,4 +19,5 @@ function reverseArr(arr) {
     }
     console.log(arr);
 }
-reverseArr(["happy", 9, true, 4, 11, 3, 8, -9]);
+// reverseArr(["happy", 9, true, 4, 11, 3, 8, -9]);
+reverseArr([3,1,6,4,2])

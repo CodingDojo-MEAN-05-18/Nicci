@@ -1,6 +1,8 @@
-var minToFrontArray=[-4,1,2,-1];
+// var minToFrontArray=[-4,1,2,-1];
+var minToFrontArray = [4,2,1,3,5,-1];
+
 function minToFront(arr){
-    temp = arr[0];
+    var temp = arr[0];
     var count = 0;
     var final_count = 0;
     for(var i=0; i < arr.length; i++){     

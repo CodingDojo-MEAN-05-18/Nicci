@@ -1,6 +1,6 @@
 
 function printLowReturnHigh(){
-    var arr = [true, 45, 2, 9];
+    var arr = [true, 45, 2, 9, -1];
     // var arr = [0, 45, 9, -9];
     var high = arr[0];
     var low = arr[0];
@@ -15,5 +15,6 @@ function printLowReturnHigh(){
     console.log(low);
     // return high;
     console.log(high);
+    return high;
 }
 printLowReturnHigh();

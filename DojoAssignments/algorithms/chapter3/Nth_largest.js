@@ -14,7 +14,9 @@ function nth_largest(arr, nth_place){
                 temp = arr[0];
                 console.log(arr[0]);            
             // temp = arr[0];
-            console.log('new arr: ' + new_arr);
+            console.log('n: ' + nth_place),
+            // console.log('nth element value: ' + ),
+            console.log('(n-1) elements larger: ' + new_arr);
         }
     }
     // var value_in_nth_place = new_arr[nth_place];

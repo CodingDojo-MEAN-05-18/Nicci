@@ -3,7 +3,7 @@ function printandreturn(arr){
     return arr[1];
 }
 var myArray = [1,2];
-printandreturn(myArray);
+// printandreturn(myArray);
 printandreturn([3,5,99,3]);
-var returnedVal = printandreturn(myArray);
-console.log('returned value: ', returnedVal);
+// var returnedVal = printandreturn(myArray);
+// console.log('returned value: ', returnedVal);

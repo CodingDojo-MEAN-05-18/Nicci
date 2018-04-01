@@ -12,3 +12,9 @@ function finalcount(param1, param2, param3, param4){
     }
 }
 finalcount(3,2,12,6)
+
+// if (NaN) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }

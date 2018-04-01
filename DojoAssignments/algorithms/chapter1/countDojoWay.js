@@ -1,15 +1,13 @@
-
-function dojocount(start, end, multi){
-    for(var start=1; end<=100; start++){
-        console.log(start);
-        while(start<=end){
-            if(start%5===0){
+function dojocount(){
+    for(var i=0; i<101;i++){
+        console.log(i);
+            if(i%5 === 0){
                 console.log("Coding");
-                    if(start%10===0){
+                    if(i%10 === 0){
                         console.log("Dojo");
                     }
             }
-        }
     }
+    return;
 }
-dojocount(1,100,5);
+console.log(dojocount());

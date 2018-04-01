@@ -6,7 +6,7 @@ function intIQ(iQ, days){
 }
 intIQ(101, 98);
 
--------------
+// -------------
 
 function intIQ(iQ, days) {
     var addedIQ = 0;
