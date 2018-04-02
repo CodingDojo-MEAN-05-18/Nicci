@@ -1,14 +1,25 @@
 function getDigits(str){
-    number = '';
-    for(var i=0; i < str.length; i++){
-        // console.log(i, str[i]);
-        if (str[i] === '0' || str[i] === '1' || str[i] === "2" || str[i] === "3" || str[i] === "4" || str[i] === "5" || str[i] === "6" || str[i] === "7" || str[i] === "8" || str[i] === "9"){
-            number = number.concat(str[i]);
-            
-        }
+    const numberRegex = new RegExp('\\d', 'g');
+    // const numberRegex = new RegExp('\\d');
+    let numArr = str.match(numberRegex);
+    console.log('numArr: ' + numArr);
+    if(!numArr){
+        return str;
     }
-    console.log('number: ' + number);
-    return number;//but this is immutable... so duh!
+
+    let result = null;
+    let i = 0;
+    while(numArr.length){
+        const currNum = parseInt(numArr.pop());
+        console.log('currNum: ' + currNum);
+        result += currNum * Math.pow(10,i);
+        console.log('Math.pow: ' + Math.pow(10,i));
+        console.log('result: ' + result);
+        i++;
+    }
+    return result;
 }
-var mixedString = "1!5@alj2j3";
+var mixedString = "1e45566r2";
+var noChar = 'hello!';
 console.log(getDigits(mixedString));
+console.log(getDigits(noChar));
