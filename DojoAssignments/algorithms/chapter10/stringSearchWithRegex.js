@@ -1,3 +1,10 @@
+// note from Wes
+// go to regexr.com
+
+// 7:49 PM
+// basically everything you can do there would be how the regex you build should work
+
+
 function stringSearchRegex(primaryStr, regexSearch, global){
     // const result = null;
     const re = new RegExp(regexSearch, global);

@@ -4,7 +4,7 @@ function stringSearch(val, str){
     let newArr = [];
     let index = null;
 
-    if (str === '' || val < str) {
+    if (str === '' ) {
         return position; //fast fail to exit
     }
 
@@ -28,5 +28,5 @@ function stringSearch(val, str){
     return position;
 }
 let test = ' this is a string';
-console.log(stringSearch(test, ''));
+console.log(stringSearch(test, 'st'));
 
