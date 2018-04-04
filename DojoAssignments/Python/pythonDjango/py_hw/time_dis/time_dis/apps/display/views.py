@@ -1,5 +1,5 @@
-# from django.shortcuts import render, HttpResponse, redirect
-# from time import gmtime, strftime
+from django.shortcuts import render, HttpResponse, redirect
+from time import gmtime, strftime
 
 # Create your views here.
 #views is the "controller"

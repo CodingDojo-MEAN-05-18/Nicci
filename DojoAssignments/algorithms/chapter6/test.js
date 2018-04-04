@@ -1,1 +1,1 @@
-console.log('testing git and jest / jasmine hi greg!');
+console.log('testing git and jest jasmine hi greg!');

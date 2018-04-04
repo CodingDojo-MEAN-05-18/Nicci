@@ -14,19 +14,3 @@
   }
 }
 
-// DOESN'T WORK... HUMMM...
-// {
-//   "name": "./chapter6",
-//   "version": "1.0.0",
-//   "description": "",
-//   "main": "test.js",
-//   "scripts": {
-//     "test": "jest --watchAll"
-//   },
-//   "keywords": [],
-//   "author": "",
-//   "license": "ISC",
-//   "devDependencies": {
-//     "jest": "^22.4.3"
-//   }
-// }
