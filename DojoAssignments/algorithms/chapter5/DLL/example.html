@@ -1,0 +1,52 @@
+<script>
+
+function dList(){
+    this.head = null;
+    this.tail = null;
+}
+function DLL(){
+
+}
+
+let node1 = new dLNode(1);
+let node2 = new dLNode(2);
+let node3 = new dLNode(3);
+let node4 = new dLNode(4);
+node2.next = node3;
+node3.next = node4;
+node4.prev = node3;
+node3.prev = node2;
+node2.prev = node1;
+let dlist = new dList();
+
+console.log(dlist);
+
+prependValue(dlist, 99,3);
+function prependValue(list, newVal, mark){
+    if(!list){
+        throw "error";
+    }    
+    let newNode = new dLNode(newVal);
+    if(!list.head){
+        list.head = newNode;
+        list.tail = newNode;
+    } else if (list.head.val === mark) {
+        let temp = list.head;
+        list.head = newNode;
+        newNode.next = temp;
+        temp.prev = newNode;
+    } else {
+        let current = list.head;
+        while(current.next){
+            if(current.next.val === mark){
+                let temp = current.next;
+            }
+            current = current.next;
+        }
+    }
+
+    return true;
+   
+
+}
+</script>
