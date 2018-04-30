@@ -13,6 +13,6 @@ function rotateArr(arr, shiftBy) {
     console.log(arr);
     return arr;
 }
-
+rotateArr([1,2,3],1);
 rotateArr([1,2,3],-1);
 rotateArr([1, 2, 3, 4, 5, 6], 200001);

@@ -13,4 +13,4 @@ function shorter(arr, length){
 }
 
 let arr=['this is fun','a', '12345','nicci', 'oliver', 'ray', 'maya','ashton'];
-console.log(shorter(arr, 5));
+console.log(shorter(arr, 7));

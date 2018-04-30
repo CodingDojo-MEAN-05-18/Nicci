@@ -1,0 +1,50 @@
+<script>
+    function dList() {
+        this.head = null;
+        this.tail = null;
+    }
+    function dLNode(val) {
+        this.val = val;
+        this.head = null;
+        this.prev = null;
+    }
+
+    let node1 = new dLNode(1);
+    let node2 = new dLNode(2);
+    let node3 = new dLNode(3);
+    let node4 = new dLNode(4);
+    node2.next = node3;
+    node3.next = node4;
+    node4.prev = node3;
+    node3.prev = node2;
+    node2.prev = node1;
+    let dlist = new dList();
+
+    console.log(dlist);
+
+    prependValue(dlist, 2);
+    function prependValue(list, mark) {
+        if (!list) {
+            throw "error, no list";
+        }
+        let newNode = new dLNode(newVal);
+        if (!list.head) {
+            throw 'error, no nodes in list';
+        } else {
+            let current = list.head;
+            const count = 1;
+            while (current) {
+                if (count === mark) {
+                    let temp = current.next;
+                }
+                count++;
+                current = current.next;
+            }
+        }
+
+        return true;
+
+
+    }
+
+</script>

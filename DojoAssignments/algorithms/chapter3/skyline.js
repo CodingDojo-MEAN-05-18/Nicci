@@ -16,3 +16,5 @@ function skyline(arr){
 console.log(skyline([12,0,1,2,3,85,-5]));
 console.log(skyline([0,-2,-4]));
 console.log(skyline([0,-4,-2,6,12]));
+console.log(skyline([-1,7,3]));
+console.log(skyline([-1,1,1,7,3]));

@@ -3,10 +3,10 @@ function filterRange(arr,min,max){
     var count = 0;
     for(var i = 0; i < arr.length; i++){       
         if (arr[i] > min && arr[i] < max){           
-            console.log('count in if: ' + count);
+            // console.log('count in if: ' + count);
             for(var k=count; k < arr.length; k++){ 
                 arr[k] = arr[k+1];
-                console.log('arr: ' + arr);
+                // console.log('arr: ' + arr);
             } 
             count = 0; 
             inner_count += 1;        
