@@ -1,0 +1,40 @@
+<script>
+
+function SLNode(value){
+    this.val = value;
+    this.next = null;
+}
+
+function SLQueue(){
+    this.head = null;
+    this.tail = null;
+    this.dequeue = function(){
+        //code here
+        if(!this.tail){
+            return 'empty queue';
+        } else {
+            var temp = this.head.val;
+            let curr = this.head.next;
+            console.log(curr);
+            this.head = curr;
+        }
+        return temp;
+    }
+
+}
+const queue = new SLQueue();
+const node1 = new SLNode(1);
+const node2 = new SLNode(2);
+const node3 = new SLNode(3);
+const node4 = new SLNode(4);
+
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+
+queue.head = node1;
+queue.tail = node4;
+//remove and return val at front of queue
+console.log(queue.dequeue());
+console.log(queue);
+</script>
