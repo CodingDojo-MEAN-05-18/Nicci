@@ -1,0 +1,12 @@
+<script>
+function Trib(num){
+    var y = Math.trunc(num);
+    // if(y < 3){
+    //     return 0;
+    // } 
+    // if(y>=3){
+        return (Trib(y-1) + Trib(y-2) + Trib(y-3));
+    // }
+}    
+console.log(Trib(3));
+</script>

@@ -21,6 +21,17 @@ function SLQueue(){
             return this;
         }
     }
+    this.contains = function (num) {
+            // console.log(queue.length);
+            let curr = this.head;
+            while (curr) {
+                if (curr.val === num) {
+                    return true;
+                }
+                curr = curr.next;
+            }
+            return false;
+        }
 }
 const queue = new SLQueue();
 const node1 = new SLNode(1);
@@ -36,6 +47,7 @@ queue.head = node1;
 queue.tail = node4;
 
 //add someone to the back of the line
-queue.enqueue(5);
-console.log(queue);
+console.log(queue.contains(5));
+console.log(queue.enqueue(5).contains(5));
+// console.log(queue);
 </script>
