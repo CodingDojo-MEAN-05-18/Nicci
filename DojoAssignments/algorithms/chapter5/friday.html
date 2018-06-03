@@ -1,0 +1,43 @@
+<script>
+
+    function SList(){
+        this.head = null;
+        this.traverse = function(callback){
+            var current = this.head;
+            while(current){
+                callback()
+                current = current.next;
+            }
+            return this;
+
+        }
+        this.display = function(){ //1
+            var current = this.head; //2
+            this.traverse(function(){ //7 
+                console.log("code")
+        });
+            // while(current){
+            //     console.log(current.val);
+            //     current = current.next;
+            // }
+
+        }
+        this.length = function(){
+            var current = this.head;
+            var lengthCount =0;
+            while(current){
+                lengthCount++;
+                current = current.next;
+            }
+            return lengthCount;
+        }
+
+    }
+    list = new SList();
+    node1 = new SLNode(1);
+    node2 = new SLNode(2);
+    node3 = new SLNode(3);
+    list1.head = node1;
+    node1.next = node2;
+    node2.next = node3;
+</script>

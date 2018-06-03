@@ -2,14 +2,15 @@
 {
 
 }
+p{
+    font-size:x-small;
+}
 .container{
     width: 940px;
     height: 800px;
     background-color: lightblue;
     padding: 5px;
     margin: 5px;
-
-    /* border: 5px solid black; */
 }
 h2, h3{
     display: inline-block;
@@ -36,13 +37,15 @@ h4{
     display: table;
     clear: both;
 }
-textarea{
-    color: lightskyblue;
-    border: 1px double darkgrey;
-    border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 5px;
+.zero, .one, .two, .three, .four, .five, .six, .seven, .eight{
+    width: 200px;
+    height: 200px;
+    color: steelblue;
+    padding: 10px;
     margin: 5px;
-
+    vertical-align: middle;
+    text-align: center;
+    background-color: lightyellow;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
